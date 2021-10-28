@@ -1,7 +1,7 @@
 import { useEffect } from "react";
-import img1 from "../../images/img1.jpg";
+import img1 from "../../images/about/img1.jpg";
 import hoverEffect from "hover-effect";
-import overlay from "../../images/overlay.png";
+import overlay from "../../images/about/overlay.png";
 
 const AboutMe = () => {
   useEffect(() => {
