@@ -1,6 +1,5 @@
 .navbar {
-    background: linear-gradient(#111827, rgba(#111827, 0%));
-    // background: linear-gradient(#10101a, rgba(#10101a, 0%));
+    background: linear-gradient(#10101a, rgba(#10101a, 0%));
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
     z-index: 50;
@@ -50,8 +49,7 @@
     left: 50%;
     width: 0px;
     height: 0px;
-    background: linear-gradient(#111827, rgba(#111827, 0%));
-    // background: linear-gradient(#10101a, rgba(#10101a, 0%));
+    background: linear-gradient(#10101a, rgba(#10101a, 0%));
 
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);

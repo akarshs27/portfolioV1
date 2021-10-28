@@ -47,7 +47,7 @@ const AboutMe = () => {
 
         </div>
         <div class="px-4 lg:max-w-lg lg:w-full md:w-1/2  flex items-center justify-center">
-          <div className="h-36 w-36 object-cover object-center md:h-80 md:w-80 item-image rounded overflow-hidden"></div>
+          <div className="h-36 w-36 object-cover object-center md:h-64 md:w-64 item-image rounded overflow-hidden"></div>
         </div>
       </div>
     </section>
