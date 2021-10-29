@@ -1,11 +1,11 @@
-import man from "../../images/hero/man.png";
+import man from "../../images/hero/man2.png";
 import anguJav from "../../images/hero/angularJavascript.png";
 import code from "../../images/hero/code1.png";
 import dots2 from "../../images/hero/dots2.png";
 import lower from "../../images/hero/lower.png";
 import reactFigma from "../../images/hero/reactFigma.png";
 import shapes from "../../images/hero/shapes.svg";
-import smHero from "../../images/hero/smHero.png";
+import smHero from "../../images/hero/smHero2.png";
 import Parallax from "parallax-js";
 import { useEffect, useRef } from "react";
 import Button from "../common/Button";
@@ -64,9 +64,6 @@ const Hero = ({ isDesktop, timeline, ease }) => {
             DEVELOPER + DESIGNER
             <span className="pl-2 text-2xl">🧑🏻‍💻</span>
           </h1>
-          {/* <p className="mb-12 leading-relaxed tracking-wider text-md md:text-xl font-medium text-gray-300">
-            I'm a design minded front-end developer
-          </p> */}
           <p className="mb-12 leading-relaxed tracking-wider text-md md:text-xl font-medium text-gray-300">
             I design and build user interfaces
           </p>

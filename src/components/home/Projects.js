@@ -38,7 +38,7 @@ const Project = () => {
             href="https://nearme-psi.vercel.app/"
             target="_blank"
             rel="noreferrer"
-            className="xl:w-1/4 md:w-1/2 p-4 transition duration-500 ease-in-out transform hover:scale-110"
+            className="xl:w-1/4 md:w-1/2 p-4 transition duration-500 ease-in-out transform hover:scale-110 link"
           >
             <div className="nearme px-4 py-6 rounded-lg flex flex-col space-y-8 justify-center items-center ">
               <img
@@ -66,7 +66,7 @@ const Project = () => {
             href="https://cryptinfo.vercel.app/"
             target="_blank"
             rel="noreferrer"
-            className="xl:w-1/4 md:w-1/2 p-4 transition duration-500 ease-in-out transform hover:scale-110"
+            className="xl:w-1/4 md:w-1/2 p-4 transition duration-500 ease-in-out transform hover:scale-110 link"
           >
             <div className="cryptinfo px-4 py-6 rounded-lg flex flex-col space-y-8  justify-center items-center">
               <img
@@ -91,7 +91,7 @@ const Project = () => {
             href="https://my-spotify-ochre.vercel.app/"
             target="_blank"
             rel="noreferrer"
-            className="xl:w-1/4 md:w-1/2 p-4 transition duration-500 ease-in-out transform hover:scale-110"
+            className="xl:w-1/4 md:w-1/2 p-4 transition duration-500 ease-in-out transform hover:scale-110 link"
           >
             <div className="spotify px-4 md:px-2 py-6 rounded-lg flex flex-col space-y-8 justify-center items-center">
               <img
@@ -100,7 +100,7 @@ const Project = () => {
                 alt="content"
               />
               <h2 className="text-xl text-gray-100 font-medium title-font">
-                MY SPOTIFY
+                STUDIO GHIBLI
               </h2>
               <div className="flex space-x-2">
                 <img src={react} alt="React logo" />
@@ -112,7 +112,7 @@ const Project = () => {
             href="https://www.dltlabs.com/"
             target="_blank"
             rel="noreferrer"
-            className="xl:w-1/4 md:w-1/2 p-4 transition duration-500 ease-in-out transform hover:scale-110"
+            className="xl:w-1/4 md:w-1/2 p-4 transition duration-500 ease-in-out transform hover:scale-110 link"
           >
             <div className="dltlabs px-4 py-6 rounded-lg flex flex-col space-y-8 justify-center items-center">
               <img

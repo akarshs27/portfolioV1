@@ -2,7 +2,7 @@
     background: linear-gradient(#10101a, rgba(#10101a, 0%));
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
-    z-index: 20;
+    z-index: 50;
 }
 
 .outer {
@@ -20,7 +20,6 @@
     transition: all 0.3s ease-in-out;
     background: rgba(#ffffff, 70%);
     z-index: 20;
-
 }
 
 .outer span:nth-child(1) {
@@ -70,6 +69,7 @@
     z-index: 30;
     transform: translate(-50%, -50%);
     text-align: center;
+    visibility: hidden;
 }
 
 .links .link a {
@@ -80,8 +80,8 @@
 }
 
 .links.active .link a {
+    visibility: visible;
     opacity: 1;
     transition: all 0.3s ease-in;
-    transition-delay: 0.5s;
-
+    transition-delay: 0.3s;
 }
