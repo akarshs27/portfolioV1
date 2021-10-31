@@ -9,6 +9,7 @@ import smHero from "../../images/hero/smHero2.png";
 import Parallax from "parallax-js";
 import { useEffect, useRef } from "react";
 import Button from "../common/Button";
+import resume from "../../images/Akarsh_Resume.pdf";
 
 const Hero = ({ isDesktop, timeline, ease }) => {
   const sceneEl = useRef(null);
@@ -68,7 +69,7 @@ const Hero = ({ isDesktop, timeline, ease }) => {
             I design and build user interfaces
           </p>
           <div className="flex justify-center">
-            <Button text="Resume" />
+            <Button name="Resume" href= {resume} />
           </div>
         </div>
         <div className="lg:max-w-3xl lg:w-full md:w-3/5 select-none" ref={heroImageEl}>

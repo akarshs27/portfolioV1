@@ -1,10 +1,10 @@
 import "./Button.scss";
 
-const Button = ({ text, onClick, href }) => {
+const Button = ({ name, onClick, href }) => {
   return (
     <>
-      <a className="btn-primary link" href={href} rel="noreferrer" onClick={onClick}>
-        {text}
+      <a className="btn-primary link" href={href} rel="noreferrer" target="_blank" onClick={onClick}>
+        {name}
       </a>
     </>
   );
