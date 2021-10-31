@@ -1,87 +1,99 @@
 .navbar {
-    background: linear-gradient(#10101a, rgba(#10101a, 0%));
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(3px);
-    z-index: 50;
+  background: linear-gradient(#10101a, rgba(#10101a, 0%));
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  z-index: 50;
 }
 
 .outer {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 .outer span {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 60%;
-    height: 2px;
-    border-radius: 0.4rem;
-    transition: all 0.3s ease-in-out;
-    background: rgba(#ffffff, 70%);
-    z-index: 20;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 2px;
+  border-radius: 0.4rem;
+  transition: all 0.3s ease-in-out;
+  background-color: rgba(#ffffff, 70%);
+  z-index: 20;
 }
 
 .outer span:nth-child(1) {
-    top: 40%;
+  top: 40%;
 }
 
 .outer span:nth-child(2) {
-    top: 60%;
+  top: 60%;
 }
 
 .outer.active span:nth-child(1) {
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(135deg);
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(135deg);
 }
 
 .outer.active span:nth-child(2) {
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(-135deg);
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-135deg);
 }
 
 .overlay {
-    z-index: 10;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 0px;
-    height: 0px;
-    background: linear-gradient(#10101a, rgba(#10101a, 0%));
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    transition: width 0.3s, height 0.3s;
-    transition-timing-function: cubic-bezier(.04,.56,1,.62);
-    transform: translate(-50%, -50%);
-    overflow: hidden;
-    border-radius: 50%;
+  z-index: 10;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 0px;
+  height: 0px;
+  background: linear-gradient(#10101a, rgba(#10101a, 0%));
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  transition: width 0.3s, height 0.3s;
+  transition-timing-function: cubic-bezier(0.04, 0.56, 1, 0.62);
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.overlay-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.overlay-index {
+  z-index: 2;
 }
 
 .overlay.active {
-    width: 200vw;
-    height: 200vh;
+  width: 200vw;
+  height: 200vh;
 }
 
 .links {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 30;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 30;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  visibility: hidden;
 }
 
 .links .link a {
-    text-decoration: none;
-    opacity: 0;
-    transition: all 0.3 ease-out;
-    color: #ffffff;
+  text-decoration: none;
+  opacity: 0;
+  transition: all 0.3 ease-out;
+  color: #ffffff;
 }
 
 .links.active .link a {
-    visibility: visible;
-    opacity: 1;
-    transition: all 0.3s ease-in;
-    transition-delay: 0.3s;
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.3s ease-in;
+  transition-delay: 0.3s;
 }
