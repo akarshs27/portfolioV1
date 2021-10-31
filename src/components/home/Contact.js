@@ -7,6 +7,7 @@ import github from "../../images/contact/github.svg";
 import linkedin from "../../images/contact/linkedin.svg";
 import twitter from "../../images/contact/twitter.svg";
 import Button from "../common/Button";
+import resume from "../../images/Akarsh_Resume.pdf";
 
 const Contact = () => {
   return (
@@ -50,8 +51,8 @@ const Contact = () => {
         </div>
       </div>
       <div className="container mx-auto flex px-5 py-12 flex-row items-center space-x-4 justify-center md:justify-start">
-       <Button text="Resume" />
-      <Button text="Say Hello" href={"mailto:" + EMAIL}/> 
+       <Button name="Resume" href={resume} />
+      <Button name="Say Hello" href={"mailto:" + EMAIL}/> 
       </div>
     </section>
   );
