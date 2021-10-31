@@ -10,11 +10,12 @@ import Parallax from "parallax-js";
 import { useEffect, useRef } from "react";
 import Button from "../common/Button";
 import resume from "../../images/Akarsh_Resume.pdf";
+import { gsap, Linear } from "gsap";
 
-const Hero = ({ isDesktop, timeline, ease }) => {
+const Hero = ({ isDesktop }) => {
   const sceneEl = useRef(null);
   const hiEl = useRef(null);
-  const heroImageEl = useRef(null);
+  const targetSection = useRef(null);
 
   useEffect(() => {
     const parallaxInstance = new Parallax(sceneEl.current, {
@@ -27,38 +28,27 @@ const Hero = ({ isDesktop, timeline, ease }) => {
   }, []);
 
   useEffect(() => {
-    if(isDesktop) {
-      timeline.from(
-        hiEl.current,
-        1,
-        {
-          opacity: 0,
-          y: 50,
-          stagger: {
-            amount: 0.5,
-          },
-        },
-        "-=1"
+    const revealTl = gsap.timeline({ defaults: { ease: Linear.easeNone } });
+    revealTl
+      .to(hiEl.current, { opacity: 1, duration: 1 })
+      .from(
+        targetSection.current.querySelectorAll(".animItem"),
+        { opacity: 0, duration: 2, stagger: 1 },
+        "<"
       );
-      timeline.from(heroImageEl.current, 0.5, {
-        opacity: 0,
-        y: 100
-      })
-    }
-
-  },[isDesktop, timeline]);
+  }, [targetSection]);
 
   return (
-    <section className="mb-16 md:mb-20 relative " id="home">
-      <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center select-none">
-        <div
-          className="md:w-2/5 flex flex-col md:pr-4 md:items-start md:text-left mb-16 md:mb-0 items-center text-center space-y-4" 
-          ref={hiEl}
-        >
-          <h1 className="text-lg font-medium text-gray-200"  >
+    <section className="mb-16 md:mb-20 relative " id="home" ref={targetSection}>
+      <div
+        className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center select-none"
+        ref={hiEl}
+      >
+        <div className="md:w-2/5 flex flex-col md:pr-4 md:items-start md:text-left mb-16 md:mb-0 items-center text-center space-y-4 animItem">
+          <h1 className="text-lg font-medium text-gray-200">
             HI THERE 👋🏻, I'M
           </h1>
-          <h1 className="tracking-wider text-4xl md:text-5xl font-semibold nameAnimation" >
+          <h1 className="tracking-wider text-4xl md:text-5xl font-semibold nameAnimation">
             Akarsh
           </h1>
           <h1 className="tracking-wider text-md md:text-lg font-medium text-gray-200">
@@ -69,10 +59,10 @@ const Hero = ({ isDesktop, timeline, ease }) => {
             I design and build user interfaces
           </p>
           <div className="flex justify-center">
-            <Button name="Resume" href= {resume} />
+            <Button name="Resume" href={resume} />
           </div>
         </div>
-        <div className="lg:max-w-3xl lg:w-full md:w-3/5 select-none" ref={heroImageEl}>
+        <div className="lg:max-w-3xl lg:w-full md:w-3/5 select-none animItem">
           {isDesktop ? (
             <>
               <div className="parallax-images" ref={sceneEl}>

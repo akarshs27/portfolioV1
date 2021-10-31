@@ -7,13 +7,37 @@ import Hero from "./components/home/Hero";
 import Navbar from "./components/common/Navbar";
 import Projects from "./components/home/Projects";
 import Skills from "./components/home/Skills";
-import { gsap, Power3 } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { gsap } from "gsap";
 
 function App() {
   const [isDesktop, setIsDesktop] = useState(true);
+  const [clientHeight, setHeight] = useState(0);
 
-  let tl = gsap.timeline();
-  let ease = Power3.easeOut();
+  useEffect(() => {
+    let timer = null;
+    const callback = () => {
+      clearTimeout(timer);
+      timer = setTimeout(() => {
+        const result =
+          typeof window.orientation === "undefined" &&
+          navigator.userAgent.indexOf("IEMobile") === -1;
+        window.history.scrollRestoration = "manual";
+        setIsDesktop(result);
+        setHeight(window.innerHeight);
+      }, 100);
+    };
+
+    callback();
+
+    window.addEventListener("resize", callback);
+    return () => {
+      window.removeEventListener("resize", callback);
+    };
+  }, []);
+
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.config({ nullTargetWarn: false });
 
   useEffect(() => {
     if (window.innerWidth < 767) {
@@ -25,8 +49,8 @@ function App() {
     <div className="bg-background">
       {isDesktop && <Cursor />}
       <div>
-        <Navbar timeline={tl} ease={ease} isDesktop={isDesktop} />
-        <Hero isDesktop={isDesktop} timeline={tl} ease={ease} />
+        <Navbar />
+        <Hero isDesktop={isDesktop} />
         <Projects />
         <Skills />
         <AboutMe />
