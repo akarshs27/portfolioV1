@@ -54,11 +54,11 @@ const Cursor = () => {
   return (
     <>
       <div
-        className="z-50 mix-blend-difference cursor fixed inset-0  bg-white select-none pointer-events-none"
+        className="mix-blend-difference cursor fixed bg-white select-none pointer-events-none"
         ref={cursorEl}
       ></div>
       <div
-        className="z-50 follower fixed inset-0  bg-gray-400 opacity-20 border border-gray-200 select-none pointer-events-none"
+        className="follower fixed select-none pointer-events-none"
         ref={followerEl}
       ></div>
     </>
