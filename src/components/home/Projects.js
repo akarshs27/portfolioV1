@@ -114,7 +114,7 @@ const Project = () => {
               </div>
             </a>
             <a
-              href="https://my-spotify-ochre.vercel.app/"
+              href="https://my-studio-two.vercel.app/"
               target="_blank"
               rel="noreferrer"
               className="xl:w-1/4 md:w-1/2 p-4 transition duration-500 ease-in-out transform hover:scale-110 link animItem"
