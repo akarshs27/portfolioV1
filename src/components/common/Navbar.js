@@ -52,7 +52,8 @@ const Navbar = () => {
   return (
     <section>
       <div ref={targetSection}>
-        <div className="navbar w-full fixed top-0 mx-auto flex px-8 md:px-24 2xl:px-44 py-2 md:py-4 md:flex-row  items-center justify-between">
+        <div className="navbar fixed top-0 w-full">
+          <div className="container mx-auto flex px-5 py-2 md:py-4 flex-row items-center justify-between">
           <a href="/#home" ref={logoEl} className="link cursor-none animItem">
             <img className="h-6" src={logo} alt="akarsh-logo" />
           </a>
@@ -63,6 +64,7 @@ const Navbar = () => {
           >
             <span className=""></span>
             <span className=""></span>
+          </div>
           </div>
         </div>
       </div>

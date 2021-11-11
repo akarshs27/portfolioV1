@@ -48,7 +48,6 @@ function App() {
   return (
     <div className="bg-background">
       {isDesktop && <Cursor />}
-      <div>
         <Navbar />
         <Hero isDesktop={isDesktop} />
         <Projects />
@@ -56,7 +55,6 @@ function App() {
         <AboutMe />
         <Contact />
         <Footer />
-      </div>
     </div>
   );
 }
