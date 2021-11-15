@@ -87,13 +87,13 @@
 .links .link a {
   text-decoration: none;
   opacity: 0;
-  transition: all 0.3 ease-out;
+  transition: all 0.2s ease-out;
   color: #ffffff;
 }
 
 .links.active .link a {
   visibility: visible;
   opacity: 1;
-  transition: all 0.3s ease-in;
+  transition: visibility 0.2s ease-in;
   transition-delay: 0.3s;
 }
