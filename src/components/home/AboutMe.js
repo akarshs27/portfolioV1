@@ -67,7 +67,7 @@ const AboutMe = () => {
             <h2 className="text-lg flex text-center text-gray-200 md:text-xl md:text-left tracking-wider animItem">
               I have serious passion for UI effects, animations and creating
               intuitive, dynamic user experiences. I am passionate about coding
-              and solving problems through code, and I am excited to work
+              and excited to work
               alongside other amazing programmers and learn so much more!
             </h2>
           </div>
