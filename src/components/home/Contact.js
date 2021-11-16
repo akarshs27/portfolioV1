@@ -24,7 +24,7 @@ const Contact = () => {
 
     ScrollTrigger.create({
       trigger: targetSection.current.querySelector(".contact-wrapper"),
-      start: "100px bottom",
+      start: "20px bottom",
       end: `center center`,
       animation: revealTl,
       scrub: 0,
@@ -33,7 +33,7 @@ const Contact = () => {
 
   return (
     <section
-      className="pb-16 md:pb-40 select-none"
+      className="pb-36 md:pb-40 select-none"
       id="contacts"
       ref={targetSection}
     >
