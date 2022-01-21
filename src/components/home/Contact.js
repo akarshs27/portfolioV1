@@ -33,7 +33,7 @@ const Contact = () => {
 
   return (
     <section
-      className="pb-36 md:pb-40 select-none"
+      className="pb-20 md:pb-40 select-none"
       id="contacts"
       ref={targetSection}
     >
