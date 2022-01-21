@@ -6,12 +6,9 @@ import dltlabs from "../../images/project/dltlabs.png";
 import react from "../../images/project/react.svg";
 import tailwind from "../../images/project/tailwind.svg";
 import sass from "../../images/project/Sass.svg";
-import redux from "../../images/project/Redux.svg";
 import angular from "../../images/project/Angular.svg";
 import gsapI from "../../images/project/GSAP.svg";
-import ant1 from "../../images/project/ant1.svg";
 import tailLogo from "../../images/project/tailImage.png";
-import antLogo from "../../images/project/antLogo.png";
 import gsapImage from "../../images/project/gsapImage.png";
 import { gsap, Linear } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
@@ -89,7 +86,7 @@ const Project = () => {
               </div>
             </a>
             <a
-              href="https://cryptinfo.vercel.app/"
+              href="https://etherpayakarshs27.netlify.app/"
               target="_blank"
               rel="noreferrer"
               className="xl:w-1/4 md:w-1/2 p-4 transition duration-500 ease-in-out transform hover:scale-110 link animItem"
@@ -101,15 +98,19 @@ const Project = () => {
                   alt="content"
                 />
                 <h2 className="text-xl text-gray-100 font-medium title-font">
-                  CRYPTINFO
+                  ETHER PAY
                 </h2>
                 <div className="flex space-x-2">
                   <img src={react} alt="React logo" />
                   <div className="relative">
-                    <img src={ant1} alt="Ant logo" />
-                    <img src={antLogo} alt="tail" className="absolute ant" />
+                    <img src={tailwind} alt="logo" />
+                    <img
+                      src={tailLogo}
+                      alt="tail"
+                      className="absolute tailwind"
+                    />
                   </div>
-                  <img src={redux} alt="Redux logo" />
+                    <img src={sass} alt="Sass logo" />
                 </div>
               </div>
             </a>
