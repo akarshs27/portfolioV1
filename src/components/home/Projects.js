@@ -1,6 +1,7 @@
 import { useRef, useEffect } from "react";
 import nearme from "../../images/project/nearme.png";
 import cryptinfo2 from "../../images/project/cryptinfo2.png";
+import chalo from "../../images/project/chalo.png";
 import spotify from "../../images/project/spotify.png";
 import dltlabs from "../../images/project/dltlabs.png";
 import react from "../../images/project/react.svg";
@@ -86,7 +87,7 @@ const Project = () => {
               </div>
             </a>
             <a
-              href="https://etherpayakarshs27.netlify.app/"
+              href="https://chalo.vercel.app/"
               target="_blank"
               rel="noreferrer"
               className="xl:w-1/4 md:w-1/2 p-4 transition duration-500 ease-in-out transform hover:scale-110 link animItem"
@@ -94,11 +95,11 @@ const Project = () => {
               <div className="cryptinfo px-4 py-6 rounded-lg flex flex-col space-y-8  justify-center items-center">
                 <img
                   className="h-48 rounded object-cover object-center"
-                  src={cryptinfo2}
+                  src={chalo}
                   alt="content"
                 />
                 <h2 className="text-xl text-gray-100 font-medium title-font">
-                  ETHER PAY
+                  ROUTE TRACKER
                 </h2>
                 <div className="flex space-x-2">
                   <img src={react} alt="React logo" />
@@ -110,7 +111,7 @@ const Project = () => {
                       className="absolute tailwind"
                     />
                   </div>
-                    <img src={sass} alt="Sass logo" />
+                    {/* <img src={sass} alt="Sass logo" /> */}
                 </div>
               </div>
             </a>
