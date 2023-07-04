@@ -2,7 +2,6 @@ import "./Button.scss";
 
 const Button = ({ name, onClick, href }) => {
   return (
-    <>
       <a
         className="btn-primary link"
         href={href}
@@ -12,7 +11,6 @@ const Button = ({ name, onClick, href }) => {
       >
         {name}
       </a>
-    </>
   );
 };
 

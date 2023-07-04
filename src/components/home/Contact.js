@@ -1,4 +1,7 @@
 import { useRef, useEffect } from "react";
+import { gsap, Linear } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import Button from "../common/Button";
 import { EMAIL } from "../../data/constants";
 import behance from "../../images/contact/behance.svg";
 import codepen from "../../images/contact/codepen.svg";
@@ -6,10 +9,7 @@ import dribble from "../../images/contact/dribble.svg";
 import github from "../../images/contact/github.svg";
 import linkedin from "../../images/contact/linkedin.svg";
 import twitter from "../../images/contact/twitter.svg";
-import Button from "../common/Button";
-import resume from "../../images/Akarsh_Resume.pdf";
-import { gsap, Linear } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import  Resume  from '../../images/Akarsh.pdf'
 
 const Contact = () => {
   const targetSection = useRef(null);
@@ -104,7 +104,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="container mx-auto flex px-5 py-12 flex-row items-center space-x-4 justify-center md:justify-start animItem">
-          <Button name="Resume" href={resume} />
+          <Button name="Resume" href={Resume} />
           <Button name="Say Hello" href={"mailto:" + EMAIL} />
         </div>
       </div>

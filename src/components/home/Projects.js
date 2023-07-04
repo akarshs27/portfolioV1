@@ -1,6 +1,7 @@
 import { useRef, useEffect } from "react";
+import { gsap, Linear } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import nearme from "../../images/project/nearme.png";
-import cryptinfo2 from "../../images/project/cryptinfo2.png";
 import chalo from "../../images/project/chalo.png";
 import spotify from "../../images/project/spotify.png";
 import dltlabs from "../../images/project/dltlabs.png";
@@ -11,8 +12,6 @@ import angular from "../../images/project/Angular.svg";
 import gsapI from "../../images/project/GSAP.svg";
 import tailLogo from "../../images/project/tailImage.png";
 import gsapImage from "../../images/project/gsapImage.png";
-import { gsap, Linear } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 const Project = () => {
   const targetSection = useRef(null);

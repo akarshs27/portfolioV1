@@ -1,8 +1,9 @@
 import { useRef, useEffect } from "react";
+import { gsap, Linear } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import javas from "../../images/skills/javas.svg";
 import react from "../../images/skills/react.svg";
 import redux from "../../images/skills/redux.svg";
-import angular from "../../images/skills/angular.svg";
 import css from "../../images/skills/css.svg";
 import gsapI from "../../images/skills/gsap.svg";
 import html from "../../images/skills/html.svg";
@@ -12,11 +13,11 @@ import tailwind from "../../images/skills/tailwind.svg";
 import figma from "../../images/skills/figma.svg";
 import ai from "../../images/skills/ai.svg";
 import photoshop from "../../images/skills/photoshop.svg";
+import nextjs from "../../images/skills/nextjs.svg";
+import typescript from "../../images/skills/typescript.svg";
 import tailImage from "../../images/project/tailImage.png";
 import gsapImage from "../../images/project/gsapImage.png";
 import styledImage from "../../images/project/styledImage.png";
-import { gsap, Linear } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 const Skills = () => {
   const targetSection = useRef(null);
@@ -80,7 +81,25 @@ const Skills = () => {
               src={redux}
               alt="redux"
             />
-            <div className="relative pr-2 mb-2">
+            <img
+              className="h-12 pr-2 mb-2 md:h-16 block"
+              src={nextjs}
+              alt="nextjs"
+            />
+            <img
+              className="h-12 pr-2 mb-2 md:h-16 block"
+              src={typescript}
+              alt="nextjs"
+            />
+             <div className="relative pr-2 mb-2">
+              <img className="h-12 md:h-16 block" src={styled} alt="styled" />
+              <img
+                className="h-12  absolute styled md:h-16 block"
+                src={styledImage}
+                alt="styled"
+              />
+            </div>
+               <div className="relative pr-2 mb-2">
               <img className="h-12 md:h-16" src={tailwind} alt="tailwind" />
               <img
                 className="h-12 absolute tail md:h-16 block"
@@ -88,11 +107,6 @@ const Skills = () => {
                 alt="tailwind"
               />
             </div>
-            <img
-              className="h-12 pr-2 mb-2 md:h-16 block"
-              src={angular}
-              alt="angular"
-            />
             <img
               className="h-12 pr-2 mb-2 md:h-16 block"
               src={sass}
@@ -106,15 +120,6 @@ const Skills = () => {
                 alt="gsap"
               />
             </div>
-            <div className="relative pr-2 mb-2">
-              <img className="h-12 md:h-16 block" src={styled} alt="styled" />
-              <img
-                className="h-12  absolute styled md:h-16 block"
-                src={styledImage}
-                alt="styled"
-              />
-            </div>
-
             <img
               className="h-12 pr-2 mb-2 md:h-16 block"
               src={html}

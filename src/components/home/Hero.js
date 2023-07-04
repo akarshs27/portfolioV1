@@ -1,16 +1,16 @@
+import { useEffect, useRef } from "react";
+import { gsap, Linear } from "gsap";
+import Parallax from "parallax-js";
+import Button from "../common/Button";
 import man from "../../images/hero/man2.png";
-import anguJav from "../../images/hero/angularJavascript.png";
+import nextjs from "../../images/hero/nextjs.png";
 import code from "../../images/hero/code1.png";
 import dots2 from "../../images/hero/dots2.png";
 import lower from "../../images/hero/lower.png";
 import reactFigma from "../../images/hero/reactFigma.png";
 import shapes from "../../images/hero/shapes.svg";
-import smHero from "../../images/hero/smHero2.png";
-import Parallax from "parallax-js";
-import { useEffect, useRef } from "react";
-import Button from "../common/Button";
-import resume from "../../images/Akarsh_Resume.pdf";
-import { gsap, Linear } from "gsap";
+import smHero3 from "../../images/hero/smHero3.png";
+import  Resume  from '../../images/Akarsh.pdf'
 
 const Hero = ({ isDesktop }) => {
   const sceneEl = useRef(null);
@@ -59,7 +59,7 @@ const Hero = ({ isDesktop }) => {
             I design and build user interfaces
           </p>
           <div className="flex justify-center">
-            <Button name="Resume" href={resume} />
+            <Button name="Resume" href={Resume} />
           </div>
         </div>
         <div className="lg:max-w-3xl lg:w-full md:w-3/5 select-none animItem">
@@ -74,8 +74,8 @@ const Hero = ({ isDesktop }) => {
                 />
                 <img
                   data-depth="0.3"
-                  src={anguJav}
-                  alt="angular"
+                  src={nextjs}
+                  alt="nextjs"
                   className="h-32 absolute z-20 angular"
                 />
                 <img
@@ -112,7 +112,7 @@ const Hero = ({ isDesktop }) => {
             </>
           ) : (
             <>
-              <img src={smHero} alt="Akarsh" />
+              <img src={smHero3} alt="Akarsh" />
             </>
           )}
         </div>
