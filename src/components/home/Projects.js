@@ -8,10 +8,9 @@ import dltlabs from "../../images/project/dltlabs.png";
 import react from "../../images/project/react.svg";
 import tailwind from "../../images/project/tailwind.svg";
 import sass from "../../images/project/Sass.svg";
-import angular from "../../images/project/Angular.svg";
-import gsapI from "../../images/project/GSAP.svg";
+import next from "../../images/project/next.svg";
+import styled from "../../images/project/styled.svg";
 import tailLogo from "../../images/project/tailImage.png";
-import gsapImage from "../../images/project/gsapImage.png";
 
 const Project = () => {
   const targetSection = useRef(null);
@@ -110,7 +109,7 @@ const Project = () => {
                       className="absolute tailwind"
                     />
                   </div>
-                    {/* <img src={sass} alt="Sass logo" /> */}
+                  {/* <img src={sass} alt="Sass logo" /> */}
                 </div>
               </div>
             </a>
@@ -148,14 +147,11 @@ const Project = () => {
                   alt="content"
                 />
                 <h2 className="text-xl text-gray-100 font-medium title-font">
-                  DLT LABS WEBSITE
+                  FASHINZA WEBSITE
                 </h2>
                 <div className="flex space-x-2">
-                  <img src={angular} alt="Angular logo" />
-                  <div className="relative">
-                    <img src={gsapI} alt="Gsap logo" />
-                    <img src={gsapImage} alt="tail" className="absolute gsap" />
-                  </div>
+                  <img src={next} alt="Next logo" />
+                  <img src={styled} alt="Styled logo" />
                   <img src={sass} alt="Sass logo" />
                 </div>
               </div>
