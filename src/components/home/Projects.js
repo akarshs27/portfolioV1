@@ -15,22 +15,22 @@ import tailLogo from "../../images/project/tailImage.png";
 const Project = () => {
   const targetSection = useRef(null);
 
-  useEffect(() => {
-    const revealTl = gsap.timeline({ defaults: { ease: Linear.easeNone } });
-    revealTl.from(
-      targetSection.current.querySelectorAll(".animItem"),
-      { opacity: 0, duration: 0.5, stagger: 0.5 },
-      "<"
-    );
+  // useEffect(() => {
+  //   const revealTl = gsap.timeline({ defaults: { ease: Linear.easeNone } });
+  //   revealTl.from(
+  //     targetSection.current.querySelectorAll(".animItem"),
+  //     { opacity: 0, duration: 0.5, stagger: 0.5 },
+  //     "<"
+  //   );
 
-    ScrollTrigger.create({
-      trigger: targetSection.current.querySelector(".project-wrapper"),
-      start: "80px bottom",
-      end: `center center`,
-      animation: revealTl,
-      scrub: 0,
-    });
-  }, [targetSection]);
+  //   ScrollTrigger.create({
+  //     trigger: targetSection.current.querySelector(".project-wrapper"),
+  //     start: "80px bottom",
+  //     end: `center center`,
+  //     animation: revealTl,
+  //     scrub: 0,
+  //   });
+  // }, [targetSection]);
 
   return (
     <section

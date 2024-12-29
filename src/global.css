@@ -49,10 +49,6 @@ html {
   }
 }
 
-
-
-//Hero Section
-
 .nameAnimation {
   background: linear-gradient(-45deg, #14f1d9, #3672f8, #14f1d9, #3672f8);
   background-clip: text;
@@ -133,8 +129,6 @@ html {
   left: 10% !important;
 }
 
-//Project
-
 .nearme {
   box-shadow: 0px 20px 50px 0px rgba(62, 74, 165, 0.5);
   background: linear-gradient(
@@ -188,8 +182,6 @@ html {
   left: 16%;
   height: 2rem;
 }
-
-//Skills
 
 .tail {
   top: 30%;

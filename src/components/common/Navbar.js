@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import logo from "../../images/logo.svg";
-import "./Navbar.scss";
+import "./Navbar.css";
 import { links } from "../../data/constants";
 import { gsap, Linear } from "gsap";
 
@@ -54,17 +54,17 @@ const Navbar = () => {
       <div ref={targetSection}>
         <div className="navbar fixed top-0 w-full">
           <div className="container mx-auto flex px-5 py-2 md:py-4 flex-row items-center justify-between">
-          <a href="/#home" ref={logoEl} className="link cursor-none animItem">
-            <img className="h-6" src={logo} alt="akarsh-logo" />
-          </a>
-          <div
-            ref={hamEl}
-            className="relative w-12 h-12 border border-transparent outer link cursor-none animItem"
-            onClick={toggleHum}
-          >
-            <span className=""></span>
-            <span className=""></span>
-          </div>
+            <a href="/#home" ref={logoEl} className="link cursor-none animItem">
+              <img className="h-6" src={logo} alt="akarsh-logo" />
+            </a>
+            <div
+              ref={hamEl}
+              className="relative w-12 h-12 border border-transparent outer link cursor-none animItem"
+              onClick={toggleHum}
+            >
+              <span className=""></span>
+              <span className=""></span>
+            </div>
           </div>
         </div>
       </div>

@@ -8,6 +8,7 @@ import Navbar from "./components/common/Navbar";
 import Projects from "./components/home/Projects";
 import Skills from "./components/home/Skills";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
 import { gsap } from "gsap";
 
 function App() {
@@ -48,13 +49,13 @@ function App() {
   return (
     <div className="bg-background">
       {isDesktop && <Cursor />}
-        <Navbar />
-        <Hero isDesktop={isDesktop} />
-        <Projects />
-        <Skills />
-        <AboutMe />
-        <Contact />
-        <Footer />
+      <Navbar />
+      <Hero isDesktop={isDesktop} />
+      <Projects />
+      <Skills />
+      <AboutMe />
+      <Contact />
+      <Footer />
     </div>
   );
 }
